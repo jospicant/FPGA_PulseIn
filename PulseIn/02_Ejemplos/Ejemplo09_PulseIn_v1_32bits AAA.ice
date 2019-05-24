@@ -154,7 +154,7 @@
           "id": "9899d7a3-d855-4fe6-931f-4abfd01d5c11",
           "type": "basic.info",
           "data": {
-            "info": "\n### Contador ancho de un Pulso.  \nPulsando el pulsador introducimos un pulso de una duración determindada por los parámetros \"t1/t2\".  \nSe cuenta la duración del pulso mediante el módulo medidor de Pulsos y una vez contada la duración se envían los  \ncuatro bytes que contienen el valor medido, uno a uno empezando por el más significativo por el puerto serie.  \n",
+            "info": "\n### Contador ancho de un Pulso.  \nPulsando el pulsador introducimos un pulso de una duración determindada por los parámetros \"t1,t2\".  \nSe cuenta la duración del pulso mediante el módulo medidor de Pulsos y una vez contada la duración se envían los  \ncuatro bytes que contienen el valor medido, uno a uno empezando por el más significativo por el puerto serie.  \n",
             "readonly": true
           },
           "position": {
