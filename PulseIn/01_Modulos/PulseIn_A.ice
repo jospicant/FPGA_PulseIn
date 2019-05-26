@@ -329,16 +329,16 @@
           "id": "b4c2dcb2-60ca-44e2-a8e3-4838389a1f48",
           "type": "basic.info",
           "data": {
-            "info": "\n# Contador del ancho de un pulso de Entrada.\n",
+            "info": "\n# Contador del ancho de un pulso de Entrada.  \nCuando se recibe el flanco de subida del pulso a medir, el contador queda habilitado empiezando a contar a la frecuencia del reloj ( 12Mhz) hasta que se detecta el flanco de  \nbajada del pulso a medir que produce la carga del valor contado hasta el momento en un registro de 32 bits y el reseteado del contador.\nLa detección del flanco de bajada también se usa para generar un tic a la salida indicando que ha terminado de medir el ancho del pulso y que los datos de la medición estarán listos  \npara ser leidos en el registro de salida de 32 bits.  \n",
             "readonly": true
           },
           "position": {
-            "x": 32,
-            "y": -48
+            "x": -24,
+            "y": -152
           },
           "size": {
-            "width": 752,
-            "height": 64
+            "width": 1328,
+            "height": 168
           }
         },
         {
