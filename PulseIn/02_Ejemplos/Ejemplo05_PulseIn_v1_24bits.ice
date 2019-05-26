@@ -193,8 +193,8 @@
           "id": "1cc7701b-a345-4ca3-af11-dae0b66829e0",
           "type": "basic.info",
           "data": {
-            "info": "\n### Checked: Status Ok  \nSe ha provocado introduciendo distintos anchos de pulsos y cuenta de forma exacta.  \nIntroduciendo un pulso que es un multiplo exacto del periodo de reloj usado ( 12MHZ)  \nme cuenta exacto",
-            "readonly": true
+            "info": "\n### Checked: Status Ok  \nSe ha provado introduciendo distintos anchos de pulsos y cuenta de forma exacta.  \nIntroduciendo un pulso que es un multiplo exacto del periodo de reloj usado ( 12MHZ)  \nme cuenta exacto",
+            "readonly": false
           },
           "position": {
             "x": 360,
@@ -202,7 +202,7 @@
           },
           "size": {
             "width": 712,
-            "height": 136
+            "height": 152
           }
         }
       ],
