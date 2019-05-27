@@ -13,7 +13,7 @@ PFont f;
 void setup() 
 {
   
-  String portName = Serial.list()[4];
+  String portName = Serial.list()[3];  // desde Arministrador de dispositivos podemos ver en que posición está nuestro COM (empezando por 0)
   myPort = new Serial(this, portName, 115200);
   
    // Create the font
@@ -54,12 +54,16 @@ void draw()
                  
       int numero = bytesToInteger(entero[0],entero[1],entero[2],entero[3]);  //paso bytes a int   MSB .... LSB
       
-      float ms=numero/12000;                                         //conversión a ms
-      float us=numero/12;
+      float ns=numero*83.3333;   // Resultado en ns  ( el valor del contador los multiplico por 83.33 ns de duración que tiene un periodo a 12 Mhz)
+      float us=ns/1000;                                         //conversión a ms
+      float ms=us/1000;
+      float sg=ms/1000;
       
-      text("Contador = "+numero,px,py);
-      text(ms+" ms",px,py+30);
-      text(us+" us",px,py+60);
+      text("Contador = "+numero,px,py);              // Valor del contador
+      text(ns+" ns",px,py+30);                       // resultado en ns
+      text(us+" us",px,py+60);                       //           en us
+      text(ms+" ms",px,py+90);                       //           en ms
+      text(sg+" sg",px,py+120);                      //           en sg
       }
       delay(50); 
   }
@@ -111,6 +115,6 @@ int bytesToInteger(byte byte1, byte byte2, byte byte3, byte byte4)  // Uso long 
   
   return n ;
 }
-    
+                                 //**********   FPGAwars. IceStudio. jospicant ****************** //
    
  
